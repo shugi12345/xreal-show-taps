@@ -1,0 +1,24 @@
+# Android/Gradle
+.gradle/
+build/
+*/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# Generated artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# OS/editor noise
+Thumbs.db
+Desktop.ini
+*.log

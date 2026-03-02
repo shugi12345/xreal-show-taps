@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">XREAL Tap Toggle</string>
+    <string name="screen_title">XREAL Show Taps</string>
+    <string name="screen_body">Uses Shizuku to turn on Show taps when an external display is connected, then restores the previous value when it disconnects.</string>
+    <string name="grant_permission">Open or Install Shizuku</string>
+    <string name="start_monitoring">Start monitoring</string>
+    <string name="stop_monitoring">Stop monitoring</string>
+    <string name="notification_title">XREAL monitor running</string>
+    <string name="notification_channel_name">XREAL monitor</string>
+    <string name="status_template">Monitoring: %1$s. Shizuku: %2$s</string>
+    <string name="permission_template">Shizuku state: %1$s</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="granted">Granted</string>
+    <string name="not_granted">Not granted</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="shizuku_not_running">Not running</string>
+    <string name="shizuku_permission_needed">Permission needed</string>
+    <string name="shizuku_ready">Ready</string>
+</resources>
