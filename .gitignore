@@ -17,6 +17,9 @@ local.properties
 *.ap_
 *.dex
 *.class
+key.properties
+*.jks
+*.keystore
 
 # OS/editor noise
 Thumbs.db

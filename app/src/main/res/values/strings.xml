@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">XREAL Tap Toggle</string>
+    <string name="app_name">XREAL Show Taps</string>
     <string name="screen_title">XREAL Show Taps</string>
     <string name="screen_body">Uses Shizuku to turn on Show taps when an external display is connected, then restores the previous value when it disconnects.</string>
     <string name="grant_permission">Open or Install Shizuku</string>
