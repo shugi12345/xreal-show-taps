@@ -1,29 +1,47 @@
-# XREAL Tap Toggle
+<p align="center">
+  <img src="./icon.png" alt="XREAL Tap Toggle icon" width="140" />
+</p>
 
-Android app that:
+# XREAL Tap Toggle 👆
 
-- watches for an external display, which is how XREAL glasses usually appear on Android
-- uses Shizuku to turn `Show taps` on when connected
-- restores the previous `Show taps` value when disconnected
+Auto-toggle Android `Show taps` when XREAL glasses connect/disconnect.
 
-## Why Shizuku
+## ✨ Features
 
-Samsung blocks normal apps from writing `show_touches`, even with `Modify system settings`. Shizuku solves that by running the change through the Android `shell` user.
+- Detects external display connection (how XREAL usually appears on Android).
+- Uses Shizuku to enable `Show taps` on connect.
+- Restores the previous `Show taps` value on disconnect.
 
-## Setup
+## 🤔 Why Shizuku?
 
-1. Install Shizuku on the phone from https://shizuku.rikka.app/download/
-2. Start Shizuku on the phone.
+Some devices (especially Samsung) block normal apps from writing `show_touches`, even with `Modify system settings`.
+Shizuku runs the command through Android's `shell` user so the setting can be changed safely.
+
+## 🚀 Setup
+
+1. Install Shizuku: https://shizuku.rikka.app/download/
+2. Start Shizuku on your phone.
 3. Open this project in Android Studio.
-4. Build and install the app on the phone.
+4. Build and install the app on your phone.
 5. Open the app.
-6. Tap `Open or Install Shizuku` if Shizuku is not already running.
+6. Tap `Open or Install Shizuku` if needed.
 7. Tap `Start monitoring`.
-8. When Shizuku asks for permission, allow it.
-9. Plug in the XREAL glasses.
+8. Allow the Shizuku permission prompt.
+9. Plug in your XREAL glasses.
 
-## Notes
+## 🛠 Build APK
 
-- On non-rooted phones, Shizuku needs to be started again after reboot.
-- Detection is based on "any non-default display connected", so other external displays can also trigger it.
-- The app stores the previous `Show taps` value and restores it when the display disconnects.
+From project root:
+
+```powershell
+.\gradlew.bat assembleDebug
+```
+
+Output APK:
+`app\build\outputs\apk\debug\app-debug.apk`
+
+## 📝 Notes
+
+- On non-rooted phones, Shizuku usually needs to be started again after reboot.
+- Detection is based on any non-default display, so other external displays can also trigger it.
+- The app stores and restores the original `Show taps` value automatically.
