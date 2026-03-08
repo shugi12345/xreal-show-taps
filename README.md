@@ -1,23 +1,31 @@
-<p align="center">
-  <img src="./icon.png" alt="XREAL Tap Toggle icon" width="140" />
+﻿<p align="center">
+  <img src="./icon.png" alt="XREAL Show Taps icon" width="140" />
 </p>
 
-# XREAL Tap Toggle 👆
+# XREAL Show Taps
 
 Auto-toggle Android `Show taps` when XREAL glasses connect/disconnect.
 
-## ✨ Features
+## Features
 
 - Detects external display connection (how XREAL usually appears on Android).
 - Uses Shizuku to enable `Show taps` on connect.
 - Restores the previous `Show taps` value on disconnect.
 
-## 🤔 Why Shizuku?
+## Screenshot
+
+![XREAL Show Taps screenshot](./screenshot.jpeg)
+
+## Video
+
+- [Demo video (video.mp4)](./video.mp4)
+
+## Why Shizuku?
 
 Some devices (especially Samsung) block normal apps from writing `show_touches`, even with `Modify system settings`.
 Shizuku runs the command through Android's `shell` user so the setting can be changed safely.
 
-## 🚀 Setup
+## Setup
 
 1. Install Shizuku: https://shizuku.rikka.app/download/
 2. Start Shizuku on your phone.
@@ -29,7 +37,7 @@ Shizuku runs the command through Android's `shell` user so the setting can be ch
 8. Allow the Shizuku permission prompt.
 9. Plug in your XREAL glasses.
 
-## 🛠 Build APK
+## Build APK
 
 From project root:
 
@@ -40,7 +48,7 @@ From project root:
 Output APK:
 `app\build\outputs\apk\debug\app-debug.apk`
 
-## 📝 Notes
+## Notes
 
 - On non-rooted phones, Shizuku usually needs to be started again after reboot.
 - Detection is based on any non-default display, so other external displays can also trigger it.
